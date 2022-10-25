@@ -1,0 +1,6 @@
+summary: Integration tests with requre support for polarion
+test: |
+    tar xJf test_data/export/binary_data.tar.xz -C test_data/export/
+    python3 -m pytest -vvv -ra --showlocals export.py
+tag+: [polarion]
+require+: [tmt-all]
