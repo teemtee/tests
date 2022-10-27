@@ -41,5 +41,4 @@ framework: shell
 require:
   - python3-pytest
 tag: [integration]
-tier: null
 link: https://github.com/packit/requre

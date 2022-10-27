@@ -25,8 +25,7 @@ nitrate.xmlrpc_driver.GSSAPITransport.single_request_with_cookies = Guess.decora
 _BugzillaXMLRPCTransport.single_request = Guess.decorator_plain()(
     _BugzillaXMLRPCTransport.single_request)
 sessions.Session.send = RequestResponseHandling.decorator(
-    item_list=[1])(
-        sessions.Session.send)
+    item_list=[1])(sessions.Session.send)
 
 tmt.export.check_git_url = Guess.decorator_plain()(tmt.export.check_git_url)
 
