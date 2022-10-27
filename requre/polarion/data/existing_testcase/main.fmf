@@ -1,0 +1,6 @@
+summary: This is case what already exists inside polarion
+extra-nitrate: TC#0609686
+link:
+  - verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1925518
+  - implements: https://polarion.example/polarion/#/project/TMT/workitem?id=TMT-43
+id: 6df5670c-ed3b-473e-8e3f-7ce416ecedf7
