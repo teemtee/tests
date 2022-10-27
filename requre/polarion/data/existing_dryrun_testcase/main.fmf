@@ -1,0 +1,6 @@
+summary: ABCDEF
+extra-nitrate: TC#0609686
+link:
+  - verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1925518
+  - implements: https://polarion.example/polarion/#/project/TMT/workitem?id=TMT-43
+id: c292c397-5cf5-4472-bcd3-a7aadc13ab87
