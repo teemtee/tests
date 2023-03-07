@@ -10,7 +10,7 @@ pylero.session:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - requre.objects
@@ -25,7 +25,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -43,7 +43,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -61,7 +61,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -79,7 +79,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -97,7 +97,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -115,7 +115,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -133,7 +133,7 @@ suds.reader:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - pylero.server
@@ -153,7 +153,7 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - pylero.base_polarion
       - suds.client
@@ -168,7 +168,7 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - suds.client
       - suds.transport.https
@@ -182,7 +182,7 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - suds.client
       - suds.transport.https
@@ -196,7 +196,7 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.work_item
       - suds.client
       - suds.transport.https
@@ -210,8 +210,9 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -224,8 +225,9 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -238,8 +240,9 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -252,8 +255,9 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -266,7 +270,7 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
       - suds.client
       - suds.transport.https
@@ -280,9 +284,9 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
+      - pylero.work_item
       - pylero.base_polarion
-      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -295,9 +299,8 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
-      - pylero.base_polarion
-      - pylero.session
+      - tmt.export.polarion
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -310,9 +313,8 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -325,7 +327,49 @@ suds.transport.http:
       module_call_list:
       - unittest.case
       - polarion.export
-      - tmt.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.20
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.21
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.22
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
       - pylero.base_polarion
       - pylero.session
       - suds.client
@@ -334,4 +378,49 @@ suds.transport.http:
       - requre.cassette
       - suds.transport.http
       - send
-    output: PolarionBase.test.yaml.bin.20
+    output: PolarionBase.test.yaml.bin.23
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.session
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.24
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.work_item
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.25
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.session
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.26

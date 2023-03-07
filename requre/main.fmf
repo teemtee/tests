@@ -9,9 +9,10 @@ description: |
     If you want to regenerate some file for test, just remove
     existing response file and run it on your machine with your
     credentials::
-
+        
         rm -rf requre/test_data/*
         cd requre/nitrate
+        pip3 install requre
         pytest -v
 
     Remove sensitive data

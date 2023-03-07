@@ -1,5 +1,5 @@
 import os.path
-import tmt.export
+import tmt.utils
 import nitrate
 from bugzilla._backendxmlrpc import _BugzillaXMLRPCTransport
 from pylero import session
@@ -27,7 +27,7 @@ _BugzillaXMLRPCTransport.single_request = Guess.decorator_plain()(
 sessions.Session.send = RequestResponseHandling.decorator(
     item_list=[1])(sessions.Session.send)
 
-tmt.export.check_git_url = Guess.decorator_plain()(tmt.export.check_git_url)
+tmt.utils.check_git_url = Guess.decorator_plain()(tmt.utils.check_git_url)
 
 
 class BinaryDataFile(ObjectStorage):

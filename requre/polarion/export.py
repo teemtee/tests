@@ -4,13 +4,13 @@ from click.testing import CliRunner
 from fmf import Tree
 import tmt.base
 import tmt.cli
-import tmt.export
+from tmt.export import polarion
 from tmt.identifier import ID_KEY
 from requre import RequreTestCase
 from pathlib import Path
 import tempfile
 import shutil
-
+import logging
 PROJECT = "RHELBASEOS"
 # Prepare path to examples
 TEST_DIR = Path(__file__).parent
@@ -37,15 +37,16 @@ class Base(RequreTestCase):
             print("Output:", self.runner_output.output)
             print("Exception:", self.runner_output.exception)
 
+logger = logging.getLogger("Test")
 
 class PolarionBase(Base):
     EXAMPLES = TEST_DIR / "data"
 
     def test(self):
         fmf_node = Tree(self.tmpdir).find("/existing_testcase")
-        tmt_test = tmt.base.Test(node=fmf_node)
+        tmt_test = tmt.base.Test(node=fmf_node, logger=logger)
         tmt_test.opt("project_id", PROJECT)
-        tmt.export.export_to_polarion(tmt_test)
+        polarion.export_to_polarion(tmt_test)
 
 
 class PolarionExport(Base):
