@@ -12,8 +12,12 @@ import tempfile
 import shutil
 import logging
 PROJECT = "RHELBASEOS"
+
 # Prepare path to examples
 TEST_DIR = Path(__file__).parent
+
+# Create the default logger
+logger = tmt.log.Logger.create(verbose=0, debug=0, quiet=False)
 
 
 class Base(RequreTestCase):
@@ -37,7 +41,6 @@ class Base(RequreTestCase):
             print("Output:", self.runner_output.output)
             print("Exception:", self.runner_output.exception)
 
-logger = logging.getLogger("Test")
 
 class PolarionBase(Base):
     EXAMPLES = TEST_DIR / "data"
