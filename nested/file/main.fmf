@@ -1,0 +1,8 @@
+summary: Example of a nested beakerlib library
+contact: Petr Matyas <pmatyas@redhat.com>
+test: ./test.sh
+framework: beakerlib
+require:
+  - coreutils
+  - pattern: random_file.sh
+    type: file
