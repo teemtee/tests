@@ -4,6 +4,5 @@ jobs:
     metadata:
         targets:
           - fedora-all
-          - epel-8
           - epel-9
         skip_build: true
