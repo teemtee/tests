@@ -272,6 +272,7 @@ suds.transport.http:
       - polarion.export
       - tmt.export.polarion
       - pylero.base_polarion
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -285,7 +286,6 @@ suds.transport.http:
       - unittest.case
       - polarion.export
       - tmt.export.polarion
-      - pylero.work_item
       - pylero.base_polarion
       - suds.client
       - suds.transport.https
@@ -301,6 +301,7 @@ suds.transport.http:
       - polarion.export
       - tmt.export.polarion
       - pylero.work_item
+      - pylero.base_polarion
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -314,7 +315,7 @@ suds.transport.http:
       - unittest.case
       - polarion.export
       - tmt.export.polarion
-      - pylero.base_polarion
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -371,7 +372,6 @@ suds.transport.http:
       - polarion.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -401,7 +401,7 @@ suds.transport.http:
       - polarion.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.work_item
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -416,7 +416,7 @@ suds.transport.http:
       - polarion.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.session
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -424,3 +424,18 @@ suds.transport.http:
       - suds.transport.http
       - send
     output: PolarionBase.test.yaml.bin.26
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.session
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionBase.test.yaml.bin.27

@@ -32,9 +32,9 @@ requests.sessions:
           - send
         output:
           __store_indicator: 1
-          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>version</name><value><string>5.0.4.rh83</string></value></member></struct></value></param></params></methodResponse>
+          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>version</name><value><string>5.0.4.rh99</string></value></member></struct></value></param></params></methodResponse>
           _next: null
-          elapsed: 0.685323
+          elapsed: 0.942821
           encoding: ISO-8859-1
           headers:
             Cache-Control: private, must-revalidate
@@ -43,9 +43,9 @@ requests.sessions:
             Content-Length: '159'
             Content-Security-Policy: frame-ancestors 'self' bugzilla.redhat.com
             Content-Type: text/xml
-            Date: Wed, 08 Mar 2023 13:54:41 GMT
+            Date: Tue, 23 Jul 2024 12:34:22 GMT
             SOAPServer: SOAP::Lite/Perl/1.27
-            Set-Cookie: Bugzilla_login_request_cookie=23OojO38ss; domain=bugzilla.redhat.com;
+            Set-Cookie: Bugzilla_login_request_cookie=0yBRv0y06I; domain=bugzilla.redhat.com;
               path=/; secure; HttpOnly; SameSite=Lax
             Strict-Transport-Security: max-age=63072000; includeSubDomains
             Vary: Accept-Encoding,User-Agent
@@ -53,8 +53,8 @@ requests.sessions:
             X-frame-options: ALLOW-FROM=https://bugzilla.redhat.com/
             X-xss-protection: 1; mode=block
             x-rh-edge-cache-status: Miss from child, Miss from parent
-            x-rh-edge-reference-id: 0.a3477b5c.1678283681.916bd51
-            x-rh-edge-request-id: 916bd51
+            x-rh-edge-reference-id: 0.5f8a1402.1721738061.4e76ff5
+            x-rh-edge-request-id: 4e76ff5
           raw: !!binary ""
           reason: OK
           status_code: 200
@@ -84,19 +84,19 @@ requests.sessions:
           - send
         output:
           __store_indicator: 1
-          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>users</name><value><array><data><value><struct><member><name>real_name</name><value><string>Need
-            Real Name</string></value></member><member><name>can_login</name><value><boolean>1</boolean></value></member><member><name>email</name><value><string>aander07@packetmaster.com</string></value></member><member><name>name</name><value><string>aander07@packetmaster.com</string></value></member><member><name>id</name><value><int>1</int></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>users</name><value><array><data><value><struct><member><name>can_login</name><value><boolean>1</boolean></value></member><member><name>name</name><value><string>aander07@packetmaster.com</string></value></member><member><name>email</name><value><string>aander07@packetmaster.com</string></value></member><member><name>real_name</name><value><string>Need
+            Real Name</string></value></member><member><name>id</name><value><int>1</int></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
           _next: null
-          elapsed: 0.751235
+          elapsed: 0.70088
           encoding: ISO-8859-1
           headers:
             Cache-Control: private, must-revalidate
             Connection: keep-alive
             Content-Encoding: gzip
-            Content-Length: '254'
+            Content-Length: '253'
             Content-Security-Policy: frame-ancestors 'self' bugzilla.redhat.com
             Content-Type: text/xml
-            Date: Wed, 08 Mar 2023 13:54:42 GMT
+            Date: Tue, 23 Jul 2024 12:34:23 GMT
             SOAPServer: SOAP::Lite/Perl/1.27
             Strict-Transport-Security: max-age=63072000; includeSubDomains
             Vary: Accept-Encoding,User-Agent
@@ -104,8 +104,8 @@ requests.sessions:
             X-frame-options: ALLOW-FROM=https://bugzilla.redhat.com/
             X-xss-protection: 1; mode=block
             x-rh-edge-cache-status: Miss from child, Miss from parent
-            x-rh-edge-reference-id: 0.a3477b5c.1678283682.916c5e6
-            x-rh-edge-request-id: 916c5e6
+            x-rh-edge-reference-id: 0.5f8a1402.1721738062.4e77243
+            x-rh-edge-request-id: 4e77243
           raw: !!binary ""
           reason: OK
           status_code: 200
@@ -133,24 +133,26 @@ requests.sessions:
           - send
         output:
           __store_indicator: 1
-          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><array><data><value><struct><member><name>flags</name><value><array><data
-            /></array></value></member><member><name>id</name><value><int>1925518</int></value></member><member><name>external_bugs</name><value><array><data><value><struct><member><name>ext_bz_id</name><value><int>69</int></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>ext_description</name><value><string>This
-            is case what already exists inside nitrate</string></value></member><member><name>type</name><value><struct><member><name>url</name><value><string>https://tcms.engineering.redhat.com</string></value></member><member><name>id</name><value><int>69</int></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>can_get</name><value><int>0</int></value></member><member><name>type</name><value><string>None</string></value></member><member><name>full_url</name><value><string>https://tcms.engineering.redhat.com/case/%id%/</string></value></member><member><name>description</name><value><string>TCMS
-            Test Case</string></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>can_send</name><value><int>0</int></value></member></struct></value></member><member><name>ext_bz_bug_id</name><value><string>609686</string></value></member><member><name>ext_status</name><value><string>None</string></value></member><member><name>id</name><value><int>1815278</int></value></member><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>bug_id</name><value><int>1925518</int></value></member></struct></value><value><struct><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>ext_status</name><value><string>None</string></value></member><member><name>id</name><value><int>2053192</int></value></member><member><name>bug_id</name><value><int>1925518</int></value></member><member><name>type</name><value><struct><member><name>description</name><value><string>Polarion
-            test case</string></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>can_get</name><value><int>0</int></value></member><member><name>id</name><value><int>117</int></value></member><member><name>url</name><value><string>https://polarion.engineering.redhat.com/polarion/</string></value></member><member><name>full_url</name><value><string>https://polarion.engineering.redhat.com/polarion/#/project/%id%</string></value></member><member><name>type</name><value><string>None</string></value></member></struct></value></member><member><name>ext_bz_bug_id</name><value><string>RedHatEnterpriseLinux7/workitem?id=RHEL-293393</string></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>ext_bz_id</name><value><int>117</int></value></member><member><name>ext_description</name><value><string>None</string></value></member></struct></value><value><struct><member><name>ext_description</name><value><string>None</string></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>ext_bz_id</name><value><int>117</int></value></member><member><name>ext_bz_bug_id</name><value><string>RHELBASEOS/workitem?id=BASEOS-12729</string></value></member><member><name>type</name><value><struct><member><name>description</name><value><string>Polarion
-            test case</string></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>can_get</name><value><int>0</int></value></member><member><name>url</name><value><string>https://polarion.engineering.redhat.com/polarion/</string></value></member><member><name>id</name><value><int>117</int></value></member><member><name>full_url</name><value><string>https://polarion.engineering.redhat.com/polarion/#/project/%id%</string></value></member><member><name>type</name><value><string>None</string></value></member></struct></value></member><member><name>bug_id</name><value><int>1925518</int></value></member><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>id</name><value><int>2090002</int></value></member><member><name>ext_status</name><value><string>None</string></value></member></struct></value></data></array></value></member></struct></value></data></array></value></member><member><name>faults</name><value><array><data
+          _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><array><data><value><struct><member><name>id</name><value><int>1925518</int></value></member><member><name>flags</name><value><array><data
+            /></array></value></member><member><name>data_category</name><value><string>Red
+            Hat</string></value></member><member><name>external_bugs</name><value><array><data><value><struct><member><name>type</name><value><struct><member><name>can_get</name><value><int>0</int></value></member><member><name>type</name><value><string>None</string></value></member><member><name>description</name><value><string>TCMS
+            Test Case</string></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>url</name><value><string>https://tcms.engineering.redhat.com</string></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>id</name><value><int>69</int></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>full_url</name><value><string>https://tcms.engineering.redhat.com/case/%id%/</string></value></member></struct></value></member><member><name>bug_id</name><value><int>1925518</int></value></member><member><name>ext_status</name><value><string>None</string></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>ext_description</name><value><string>This
+            is case what already exists inside nitrate</string></value></member><member><name>ext_bz_id</name><value><int>69</int></value></member><member><name>ext_bz_bug_id</name><value><string>609686</string></value></member><member><name>id</name><value><int>1815278</int></value></member></struct></value><value><struct><member><name>ext_priority</name><value><string>None</string></value></member><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>ext_description</name><value><string>None</string></value></member><member><name>ext_bz_id</name><value><int>117</int></value></member><member><name>ext_bz_bug_id</name><value><string>RedHatEnterpriseLinux7/workitem?id=RHEL-293393</string></value></member><member><name>id</name><value><int>2053192</int></value></member><member><name>type</name><value><struct><member><name>can_get</name><value><int>0</int></value></member><member><name>type</name><value><string>None</string></value></member><member><name>description</name><value><string>Polarion
+            test case</string></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>full_url</name><value><string>https://polarion.engineering.redhat.com/polarion/#/project/%id%</string></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>id</name><value><int>117</int></value></member><member><name>url</name><value><string>https://polarion.engineering.redhat.com/polarion/</string></value></member></struct></value></member><member><name>ext_status</name><value><string>None</string></value></member><member><name>bug_id</name><value><int>1925518</int></value></member></struct></value><value><struct><member><name>ext_bz_id</name><value><int>117</int></value></member><member><name>id</name><value><int>2090002</int></value></member><member><name>ext_bz_bug_id</name><value><string>RHELBASEOS/workitem?id=BASEOS-12729</string></value></member><member><name>ext_description</name><value><string>None</string></value></member><member><name>is_migration_link</name><value><int>0</int></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>type</name><value><struct><member><name>type</name><value><string>None</string></value></member><member><name>can_get</name><value><int>0</int></value></member><member><name>full_url</name><value><string>https://polarion.engineering.redhat.com/polarion/#/project/%id%</string></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>id</name><value><int>117</int></value></member><member><name>url</name><value><string>https://polarion.engineering.redhat.com/polarion/</string></value></member><member><name>description</name><value><string>Polarion
+            test case</string></value></member><member><name>send_once</name><value><int>0</int></value></member></struct></value></member><member><name>bug_id</name><value><int>1925518</int></value></member><member><name>ext_status</name><value><string>None</string></value></member></struct></value><value><struct><member><name>bug_id</name><value><int>1925518</int></value></member><member><name>ext_status</name><value><string>None</string></value></member><member><name>type</name><value><struct><member><name>type</name><value><string>None</string></value></member><member><name>can_get</name><value><int>0</int></value></member><member><name>url</name><value><string>https://polarion.engineering.redhat.com/polarion/</string></value></member><member><name>must_send</name><value><int>0</int></value></member><member><name>id</name><value><int>117</int></value></member><member><name>can_send</name><value><int>0</int></value></member><member><name>full_url</name><value><string>https://polarion.engineering.redhat.com/polarion/#/project/%id%</string></value></member><member><name>send_once</name><value><int>0</int></value></member><member><name>description</name><value><string>Polarion
+            test case</string></value></member></struct></value></member><member><name>ext_description</name><value><string>None</string></value></member><member><name>id</name><value><int>2326185</int></value></member><member><name>ext_bz_bug_id</name><value><string>RHELBASEOS/workitem?id=BASEOS-19087</string></value></member><member><name>ext_bz_id</name><value><int>117</int></value></member><member><name>ext_priority</name><value><string>None</string></value></member><member><name>is_migration_link</name><value><int>0</int></value></member></struct></value></data></array></value></member></struct></value></data></array></value></member><member><name>faults</name><value><array><data
             /></array></value></member></struct></value></param></params></methodResponse>
           _next: null
-          elapsed: 0.723391
+          elapsed: 0.573018
           encoding: ISO-8859-1
           headers:
             Cache-Control: private, must-revalidate
             Connection: keep-alive
             Content-Encoding: gzip
-            Content-Length: '678'
+            Content-Length: '745'
             Content-Security-Policy: frame-ancestors 'self' bugzilla.redhat.com
             Content-Type: text/xml
-            Date: Wed, 08 Mar 2023 13:54:42 GMT
+            Date: Tue, 23 Jul 2024 12:34:23 GMT
             SOAPServer: SOAP::Lite/Perl/1.27
             Strict-Transport-Security: max-age=63072000; includeSubDomains
             Vary: Accept-Encoding,User-Agent
@@ -158,8 +160,8 @@ requests.sessions:
             X-frame-options: ALLOW-FROM=https://bugzilla.redhat.com/
             X-xss-protection: 1; mode=block
             x-rh-edge-cache-status: Miss from child, Miss from parent
-            x-rh-edge-reference-id: 0.a3477b5c.1678283682.916d2df
-            x-rh-edge-request-id: 916d2df
+            x-rh-edge-reference-id: 0.5f8a1402.1721738063.4e7743d
+            x-rh-edge-request-id: 4e7743d
           raw: !!binary ""
           reason: OK
           status_code: 200
@@ -190,7 +192,7 @@ requests.sessions:
           _content: <?xml version="1.0" encoding="UTF-8"?><methodResponse><fault><value><struct><member><name>faultString</name><value><string>No
             data given for change or flag name invalid.</string></value></member><member><name>faultCode</name><value><int>700</int></value></member></struct></value></fault></methodResponse>
           _next: null
-          elapsed: 0.914446
+          elapsed: 0.687562
           encoding: ISO-8859-1
           headers:
             Cache-Control: private, must-revalidate
@@ -199,7 +201,7 @@ requests.sessions:
             Content-Length: '196'
             Content-Security-Policy: frame-ancestors 'self' bugzilla.redhat.com
             Content-Type: text/xml
-            Date: Wed, 08 Mar 2023 13:54:43 GMT
+            Date: Tue, 23 Jul 2024 12:34:24 GMT
             SOAPServer: SOAP::Lite/Perl/1.27
             Strict-Transport-Security: max-age=63072000; includeSubDomains
             Vary: Accept-Encoding,User-Agent
@@ -207,32 +209,13 @@ requests.sessions:
             X-frame-options: ALLOW-FROM=https://bugzilla.redhat.com/
             X-xss-protection: 1; mode=block
             x-rh-edge-cache-status: Miss from child, Miss from parent
-            x-rh-edge-reference-id: 0.a3477b5c.1678283683.916defe
-            x-rh-edge-request-id: 916defe
+            x-rh-edge-reference-id: 0.5f8a1402.1721738063.4e7761b
+            x-rh-edge-request-id: 4e7761b
           raw: !!binary ""
           reason: OK
           status_code: 200
 suds.transport.http:
   send:
-  - metadata:
-      latency: 0.0
-      module_call_list:
-      - unittest.case
-      - polarion.export
-      - click.testing
-      - click.core
-      - click.decorators
-      - tmt.cli
-      - tmt.export
-      - tmt.export.polarion
-      - pylero.work_item
-      - suds.client
-      - suds.transport.https
-      - requre.objects
-      - requre.cassette
-      - suds.transport.http
-      - send
-    output: PolarionExport.test_coverage_bugzilla.yaml.bin.27
   - metadata:
       latency: 0.0
       module_call_list:
@@ -263,8 +246,7 @@ suds.transport.http:
       - tmt.cli
       - tmt.export
       - tmt.export.polarion
-      - pylero.base_polarion
-      - pylero.session
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -304,7 +286,7 @@ suds.transport.http:
       - tmt.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.work_item
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -324,7 +306,7 @@ suds.transport.http:
       - tmt.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.session
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -343,7 +325,8 @@ suds.transport.http:
       - tmt.cli
       - tmt.export
       - tmt.export.polarion
-      - pylero.work_item
+      - pylero.base_polarion
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -363,7 +346,7 @@ suds.transport.http:
       - tmt.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.session
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -382,8 +365,7 @@ suds.transport.http:
       - tmt.cli
       - tmt.export
       - tmt.export.polarion
-      - pylero.base_polarion
-      - pylero.session
+      - pylero.work_item
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -403,7 +385,7 @@ suds.transport.http:
       - tmt.export
       - tmt.export.polarion
       - pylero.base_polarion
-      - pylero.work_item
+      - pylero.session
       - suds.client
       - suds.transport.https
       - requre.objects
@@ -431,3 +413,43 @@ suds.transport.http:
       - suds.transport.http
       - send
     output: PolarionExport.test_coverage_bugzilla.yaml.bin.37
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - click.testing
+      - click.core
+      - click.decorators
+      - tmt.cli
+      - tmt.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.work_item
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionExport.test_coverage_bugzilla.yaml.bin.38
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - click.testing
+      - click.core
+      - click.decorators
+      - tmt.cli
+      - tmt.export
+      - tmt.export.polarion
+      - pylero.base_polarion
+      - pylero.session
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionExport.test_coverage_bugzilla.yaml.bin.39
