@@ -1,5 +1,4 @@
 import os.path
-import tmt.utils
 import nitrate
 from bugzilla._backendxmlrpc import _BugzillaXMLRPCTransport
 from pylero import session
@@ -27,7 +26,14 @@ _BugzillaXMLRPCTransport.single_request = Guess.decorator_plain()(
 sessions.Session.send = RequestResponseHandling.decorator(
     item_list=[1])(sessions.Session.send)
 
-tmt.utils.check_git_url = Guess.decorator_plain()(tmt.utils.check_git_url)
+# The function moved to 'tmt.utils.git'
+# https://github.com/teemtee/tmt/pull/2983
+try:
+    import tmt.utils
+    tmt.utils.check_git_url = Guess.decorator_plain()(tmt.utils.check_git_url)
+except AttributeError:
+    import tmt.utils.git
+    tmt.utils.git.check_git_url = Guess.decorator_plain()(tmt.utils.git.check_git_url)
 
 
 class BinaryDataFile(ObjectStorage):
