@@ -12,26 +12,7 @@ suds.transport.http:
       - click.testing
       - click.core
       - click.decorators
-      - tmt.cli
-      - tmt.export
-      - tmt.export.polarion
-      - pylero.work_item
-      - suds.client
-      - suds.transport.https
-      - requre.objects
-      - requre.cassette
-      - suds.transport.http
-      - send
-    output: PolarionExport.test_existing_dryrun.yaml.bin.72
-  - metadata:
-      latency: 0.0
-      module_call_list:
-      - unittest.case
-      - polarion.export
-      - click.testing
-      - click.core
-      - click.decorators
-      - tmt.cli
+      - tmt.cli._root
       - tmt.export
       - tmt.export.polarion
       - pylero.work_item
@@ -50,7 +31,7 @@ suds.transport.http:
       - click.testing
       - click.core
       - click.decorators
-      - tmt.cli
+      - tmt.cli._root
       - tmt.export
       - tmt.export.polarion
       - pylero.work_item
@@ -61,3 +42,22 @@ suds.transport.http:
       - suds.transport.http
       - send
     output: PolarionExport.test_existing_dryrun.yaml.bin.74
+  - metadata:
+      latency: 0.0
+      module_call_list:
+      - unittest.case
+      - polarion.export
+      - click.testing
+      - click.core
+      - click.decorators
+      - tmt.cli._root
+      - tmt.export
+      - tmt.export.polarion
+      - pylero.work_item
+      - suds.client
+      - suds.transport.https
+      - requre.objects
+      - requre.cassette
+      - suds.transport.http
+      - send
+    output: PolarionExport.test_existing_dryrun.yaml.bin.75

@@ -12,7 +12,7 @@ suds.transport.http:
       - click.testing
       - click.core
       - click.decorators
-      - tmt.cli
+      - tmt.cli._root
       - tmt.export
       - tmt.export.polarion
       - pylero.work_item
@@ -22,4 +22,4 @@ suds.transport.http:
       - requre.cassette
       - suds.transport.http
       - send
-    output: PolarionExport.test_create_dryrun.yaml.bin.59
+    output: PolarionExport.test_create_dryrun.yaml.bin.60
