@@ -4,6 +4,7 @@ import click.core
 import click.testing
 from fmf import Tree
 import tmt.base
+import tmt.cli._root
 from tmt.export import polarion
 from tmt.identifier import ID_KEY
 from requre import RequreTestCase
@@ -117,7 +118,7 @@ class PolarionExport(Base):
 
         os.chdir(self.tmpdir / "new_testcase")
         runner = CliRunner()
-        self.runner_output = runner.invoke(cli_main, [
+        self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
             PROJECT, "--create", "."])
         # Reload the node data to see if it appears there
@@ -131,7 +132,7 @@ class PolarionExport(Base):
         os.chdir(self.tmpdir / "new_testcase")
         runner = CliRunner()
         self.runner_output = runner.invoke(
-            cli_main,
+            tmt.cli._root.main,
             ["test", "export", "--how", "polarion", "--create", "--project-id",
              PROJECT, "--dry", "."],
             catch_exceptions=False)
@@ -148,7 +149,7 @@ class PolarionExport(Base):
 
         os.chdir(self.tmpdir / "existing_testcase")
         runner = CliRunner()
-        self.runner_output = runner.invoke(cli_main, [
+        self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
             PROJECT, "--create", "."])
 
@@ -162,7 +163,7 @@ class PolarionExport(Base):
         os.chdir(self.tmpdir / "existing_dryrun_testcase")
         runner = CliRunner()
         self.runner_output = runner.invoke(
-            cli_main,
+            tmt.cli._root.main,
             ["test", "export", "--how", "polarion", "--debug", "--dry",
              "--bugzilla", "."],
             catch_exceptions=False)
@@ -176,7 +177,7 @@ class PolarionExport(Base):
 
         os.chdir(self.tmpdir / "existing_testcase")
         runner = CliRunner()
-        self.runner_output = runner.invoke(cli_main, [
+        self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
             PROJECT, "--bugzilla", "."])
         assert self.runner_output.exit_code == 0
