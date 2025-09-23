@@ -1,0 +1,8 @@
+tag: remote
+
+/one:
+    summary: Remote test one
+    test: echo one
+/two:
+    summary: Remote test two
+    test: echo two

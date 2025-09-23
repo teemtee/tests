@@ -1,0 +1,11 @@
+summary: A simple smoke plan for remote testing
+description:
+    This is just a simple smoke plan used for testing import of
+    remote plans. See the related test coverage for more details.
+discover:
+    how: fmf
+    filter: tag:remote
+execute:
+    how: tmt
+link:
+  - relates: https://github.com/teemtee/tmt/tree/main/tests/plan/import
