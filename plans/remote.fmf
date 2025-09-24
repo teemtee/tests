@@ -5,6 +5,8 @@ description:
 discover:
     how: fmf
     filter: tag:remote
+provision:
+    how: local
 execute:
     how: tmt
 link:
