@@ -1,3 +1,14 @@
 summary: Verify integration with other systems
+prepare:
+  - name: enable-latest-copr
+    summary: Enable copr repo with the latest tmt bits
+    description:
+        We often need to adjust test data here in the tests repo.
+        When the corresponding change is merged in the main tmt
+        repository we would have failing tests here until the next
+        tmt release. Thus we use the latest bits from the copr
+        repository instead.
+    how: install
+    copr: "@teemtee/latest"
 execute:
     how: tmt
