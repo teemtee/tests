@@ -1,6 +1,6 @@
 summary: A simple smoke plan for remote testing
 description:
-    This is just a simple smoke plan used for testing import of
+    This is just a simple smoke plan used for testing importing of
     remote plans. See the related test coverage for more details.
 discover:
     how: fmf
