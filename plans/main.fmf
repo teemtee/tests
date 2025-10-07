@@ -16,7 +16,13 @@ prepare:
     description:
         It has a higher priority and would always win.
     how: shell
-    script: dnf config-manager --set-disabled testing-farm-tag-repository
+    script: |
+        dnf repolist | grep testing-farm-tag-repository || exit 0
+        if command -v dnf5; then
+            dnf config-manager setopt testing-farm-tag-repository.enabled=0
+        else
+            dnf config-manager --set-disabled testing-farm-tag-repository
+        fi
 
 execute:
     how: tmt
