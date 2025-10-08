@@ -1,8 +1,7 @@
 jobs:
   - job: tests
     trigger: pull_request
-    metadata:
-        targets:
-          - fedora-all
-          - epel-9
-        skip_build: true
+    targets:
+      - fedora-all
+      - epel-10
+    skip_build: true
