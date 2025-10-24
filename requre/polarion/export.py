@@ -105,7 +105,8 @@ class PolarionBase(Base):
     def test(self):
         fmf_node = Tree(self.tmpdir).find("/existing_testcase")
         tmt_test = tmt.base.Test(node=fmf_node, logger=logger)
-        tmt_test.opt("project_id", PROJECT)
+        tmt_test.store_cli_invocation(
+            context=None, options={"ignore_git_validation": True, "project_id": PROJECT})
         polarion.export_to_polarion(tmt_test)
 
 
@@ -120,7 +121,7 @@ class PolarionExport(Base):
         runner = CliRunner()
         self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
-            PROJECT, "--create", "."])
+            PROJECT, "--create", "--ignore-git-validation", "."])
         # Reload the node data to see if it appears there
         fmf_node = Tree(self.tmpdir).find("/new_testcase")
         self.assertIn(ID_KEY, fmf_node.data)
@@ -134,7 +135,7 @@ class PolarionExport(Base):
         self.runner_output = runner.invoke(
             tmt.cli._root.main,
             ["test", "export", "--how", "polarion", "--create", "--project-id",
-             PROJECT, "--dry", "."],
+             PROJECT, "--dry", "--ignore-git-validation", "."],
             catch_exceptions=False)
         fmf_node = Tree(self.tmpdir).find("/new_testcase")
         self.assertNotIn(ID_KEY, fmf_node.data)
@@ -151,7 +152,7 @@ class PolarionExport(Base):
         runner = CliRunner()
         self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
-            PROJECT, "--create", "."])
+            PROJECT, "--create", "--ignore-git-validation", "."])
 
         fmf_node = Tree(self.tmpdir).find("/existing_testcase")
         self.assertEqual(fmf_node.data["extra-nitrate"], "TC#0609686")
@@ -165,7 +166,7 @@ class PolarionExport(Base):
         self.runner_output = runner.invoke(
             tmt.cli._root.main,
             ["test", "export", "--how", "polarion", "--debug", "--dry",
-             "--bugzilla", "."],
+             "--bugzilla", "--ignore-git-validation", "."],
             catch_exceptions=False)
         self.assertIn(
             "title: ABCDEF",
@@ -179,5 +180,5 @@ class PolarionExport(Base):
         runner = CliRunner()
         self.runner_output = runner.invoke(tmt.cli._root.main, [
             "test", "export", "--how", "polarion", "--project-id",
-            PROJECT, "--bugzilla", "."])
+            PROJECT, "--bugzilla", "--ignore-git-validation", "."])
         assert self.runner_output.exit_code == 0
