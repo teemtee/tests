@@ -1,0 +1,17 @@
+/:
+  select: true
+
+link:
+  - verifies: https://github.com/teemtee/tmt/pull/4813
+  - verifies: https://github.com/teemtee/tmt/pull/664
+
+
+summary: Tests for modified-only (exact name, pick)
+description: |
+  This test picked up when modified-only is used because a file on the same level is modified
+test: /usr/bin/true
+
+/sub:
+  summary: Tests for modified-only (sub-tests, pick)
+  description: |
+    This test picked up when modified-only is used because a file on the parent level is modified
