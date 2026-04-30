@@ -1,0 +1,8 @@
+link:
+  # part of `/tests/modified-only`
+  - verifies: https://github.com/teemtee/tmt/pull/4813
+
+summary: Tests for modified-only (skip)
+description: |
+  This test should not be picked up when modified-only is used
+test: /usr/bin/true
