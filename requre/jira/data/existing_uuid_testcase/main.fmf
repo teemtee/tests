@@ -1,0 +1,6 @@
+summary: This is case found in Jira by UUID
+link:
+  - verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1925518
+  - implements: 
+        https://polarion.example/polarion/#/project/TMT/workitem?id=TMT-43
+id: e0b6aed4-b44d-41fb-a845-3e6559da5e33
