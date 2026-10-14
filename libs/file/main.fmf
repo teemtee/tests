@@ -7,4 +7,4 @@ adjust:
   - when: distro == fedora-something
     require+:
       - coreutils-debuginfo
-    because: library adjust block
+    because: library adjust block, for tmt issue 5084
