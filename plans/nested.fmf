@@ -1,0 +1,24 @@
+# Plans used for testing import plan nesting.
+
+/:
+    inherit: false
+
+/one:
+    summary: Remote plan on level one
+    description: Imports /plans/nested/two
+    plan:
+        import:
+            url: https://github.com/teemtee/tests
+            ref: import-plans-nesting
+            name: /plans/nested/two
+
+/two:
+    summary: Remote plan on level two
+    description: This plan is referenced from /plans/nested/one
+    discover:
+        how: fmf
+        filter: tag:remote
+    provision:
+        how: local
+    execute:
+        how: tmt
