@@ -15,3 +15,12 @@ prepare+:
     script: "bash setup/pylero-config.sh"
   - name: Create default nitrate config
     script: "bash setup/nitrate-config.sh"
+
+adjust:
+    # Enable epel on CentOS Stream
+  - prepare+:
+      - name: enable-epel
+        how: feature
+        epel: enabled
+        order: 10
+    when: distro == centos-stream
