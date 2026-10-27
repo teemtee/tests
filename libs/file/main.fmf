@@ -1,0 +1,10 @@
+summary: Beakerlib library
+test: ./test.sh
+framework: beakerlib
+require:
+  - coreutils
+adjust:
+  - when: distro == fedora-something
+    require+:
+      - coreutils-debuginfo
+    because: library adjust block, for tmt issue 5084
