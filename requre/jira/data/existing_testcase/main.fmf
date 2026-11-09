@@ -1,0 +1,7 @@
+summary: This is case what already exists in Jira
+link:
+  - verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1925518
+  - implements: 
+        https://polarion.example/polarion/#/project/TMT/workitem?id=TMT-43
+  - implements: https://stage-redhat.atlassian.net/browse/RHELTEST-4746
+id: 793b1491-738d-42f3-a3d0-fd23afa77fbc

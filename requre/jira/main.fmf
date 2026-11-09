@@ -1,0 +1,5 @@
+summary: Integration tests with requre support for the Jira export and report plugins
+test: |
+    python3 -m pytest -vvv -ra --showlocals export.py report.py
+tag+: [jira]
+require+: [tmt-all, python3-requre, python3-requests]

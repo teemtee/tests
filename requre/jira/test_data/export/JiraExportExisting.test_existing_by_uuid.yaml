@@ -1,0 +1,335 @@
+_requre:
+  DataTypes: 1
+  key_strategy: StorageKeysInspectSimple
+  version_storage_file: 3
+requests.sessions:
+  send:
+    GET:
+      https://stage-redhat.atlassian.net/rest/api/3/issue/RHELTEST-16971/remotelink:
+      - metadata:
+          latency: 0.4806654453277588
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 2
+          _content:
+          - application: {}
+            id: 6050539
+            object:
+              icon: {}
+              status:
+                icon: {}
+              title: BZ#1925518
+              url: https://bugzilla.redhat.com/show_bug.cgi?id=1925518
+            self: https://stage-redhat.atlassian.net/rest/api/3/issue/RHELTEST-16971/remotelink/6050539
+          _next: null
+          elapsed: 0.480394
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: b1ffe712-9a5a-48ba-826c-143707cebe85
+            Atl-Traceid: b1ffe7129a5a48ba826c143707cebe85
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Encoding: br
+            Content-Type: application/json;charset=UTF-8
+            Date: Wed, 19 Aug 2026 12:16:03 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Ratelimit: '"jira-burst-based";r=349;t=1'
+            Ratelimit-Policy: '"jira-burst-based";q=100;w=1'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=292,cdn-upstream-fbl;dur=469,atl-edge;dur=79,atl-edge-internal;dur=16,atl-edge-upstream;dur=63,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="V4_9adQbOQHHs_krz2V1Mj9e8Ogj08m3St3O2ChRkIlobjVc-A8nig==",cdn-downstream-fbl;dur=475
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Aaccountid: 70121%3A8f548c74-cab4-473d-8b49-8bce9c7a5a84
+            X-Amz-Cf-Id: V4_9adQbOQHHs_krz2V1Mj9e8Ogj08m3St3O2ChRkIlobjVc-A8nig==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: bdad811f63b2cba33cd6e19f6641c785
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Ratelimit-Limit: '350'
+            X-Ratelimit-Remaining: '349'
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: OK
+          status_code: 200
+      https://stage-redhat.atlassian.net/rest/api/3/issue/RHELTEST-16971?fields=issuelinks:
+      - metadata:
+          latency: 0.20246505737304688
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 2
+          _content:
+            expand: renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations
+            fields:
+              issuelinks: []
+            id: '6812373'
+            key: RHELTEST-16971
+            self: https://stage-redhat.atlassian.net/rest/api/3/issue/6812373
+          _next: null
+          elapsed: 0.202166
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: 2a0c4ea9-f83f-4f9d-aeba-67579ec24a6d
+            Atl-Traceid: 2a0c4ea9f83f4f9daeba67579ec24a6d
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Encoding: br
+            Content-Type: application/json;charset=UTF-8
+            Date: Wed, 19 Aug 2026 12:16:03 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Ratelimit: '"jira-burst-based";r=398;t=1'
+            Ratelimit-Policy: '"jira-burst-based";q=150;w=1'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=191,atl-edge;dur=92,atl-edge-internal;dur=15,atl-edge-upstream;dur=77,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="Tde0u1A9StZpm9EDcFowCuEPsvmh-vObve-WxwjIRrt4nxWXSql96g==",cdn-downstream-fbl;dur=197
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Aaccountid: 70121%3A8f548c74-cab4-473d-8b49-8bce9c7a5a84
+            X-Amz-Cf-Id: Tde0u1A9StZpm9EDcFowCuEPsvmh-vObve-WxwjIRrt4nxWXSql96g==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: 84837158403ecc06198e6e121a5fdda1
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Ratelimit-Limit: '400'
+            X-Ratelimit-Remaining: '398'
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: OK
+          status_code: 200
+      https://stage-redhat.atlassian.net/rest/api/3/issue/RHELTEST-16971?fields=status:
+      - metadata:
+          latency: 0.19087839126586914
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 2
+          _content:
+            expand: renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations
+            fields:
+              status:
+                description: ''
+                iconUrl: https://stage-redhat.atlassian.net/images/icons/statuses/generic.png
+                id: '10215'
+                name: Active
+                self: https://stage-redhat.atlassian.net/rest/api/3/status/10215
+                statusCategory:
+                  colorName: yellow
+                  id: 4
+                  key: indeterminate
+                  name: In Progress
+                  self: https://stage-redhat.atlassian.net/rest/api/3/statuscategory/4
+            id: '6812373'
+            key: RHELTEST-16971
+            self: https://stage-redhat.atlassian.net/rest/api/3/issue/6812373
+          _next: null
+          elapsed: 0.190626
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: f0501a96-5b71-4fad-9534-a68df2375292
+            Atl-Traceid: f0501a965b714fad9534a68df2375292
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Encoding: br
+            Content-Type: application/json;charset=UTF-8
+            Date: Wed, 19 Aug 2026 12:16:03 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Ratelimit: '"jira-burst-based";r=399;t=1'
+            Ratelimit-Policy: '"jira-burst-based";q=150;w=1'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=180,atl-edge;dur=81,atl-edge-internal;dur=15,atl-edge-upstream;dur=67,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="CFO2q7QW0VjW9wLFlDlJ3RfOHLh5N7pLmMRbHjUhH6edttDm4RJwhw==",cdn-downstream-fbl;dur=185
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Aaccountid: 70121%3A8f548c74-cab4-473d-8b49-8bce9c7a5a84
+            X-Amz-Cf-Id: CFO2q7QW0VjW9wLFlDlJ3RfOHLh5N7pLmMRbHjUhH6edttDm4RJwhw==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: b3c8bf6a8f2d5dbd94aa4ed9324b4a2a
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Ratelimit-Limit: '400'
+            X-Ratelimit-Remaining: '399'
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: OK
+          status_code: 200
+    POST:
+      https://stage-redhat.atlassian.net/rest/api/3/search/jql:
+      - metadata:
+          latency: 0.39536213874816895
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 2
+          _content:
+            isLast: false
+            issues:
+            - expand: renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations
+              fields:
+                summary: This is case found in Jira by UUID
+              id: '6812373'
+              key: RHELTEST-16971
+              self: https://stage-redhat.atlassian.net/rest/api/3/issue/6812373
+            nextPageToken: EAEYrNvMz4E0ImFwcm9qZWN0PSJSSEVMVEVTVCIgQU5EIGlzc3VldHlwZT0iVGVzdCBDYXNlIiBBTkQgY2ZbMTA1OTFdPSJlMGI2YWVkNC1iNDRkLTQxZmItYTg0NS0zZTY1NTlkYTVlMzMiKgJbXTIWSlNJU19CQURfUkVRVUVTVF9FUlJPUg==
+          _next: null
+          elapsed: 0.395036
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: 613fb1a6-687d-4780-9878-ef53a4580e85
+            Atl-Traceid: 613fb1a6687d47809878ef53a4580e85
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Encoding: br
+            Content-Type: application/json;charset=UTF-8
+            Date: Wed, 19 Aug 2026 12:16:02 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Ratelimit: '"jira-burst-based";r=199;t=1'
+            Ratelimit-Policy: '"jira-burst-based";q=100;w=1'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=363,atl-edge;dur=265,atl-edge-internal;dur=15,atl-edge-upstream;dur=249,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="bXbAFxoWIKGWCjyouGiNUhue9jn3BCbIOFRLg91WGYL0pYuxOBv68Q==",cdn-downstream-fbl;dur=368
+            Set-Cookie: atlassian.xsrf.token=3b64777dab0e86a52a0e845995be7f4d9756addc_lin;
+              Path=/; SameSite=None; Secure
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Aaccountid: 70121%3A8f548c74-cab4-473d-8b49-8bce9c7a5a84
+            X-Amz-Cf-Id: bXbAFxoWIKGWCjyouGiNUhue9jn3BCbIOFRLg91WGYL0pYuxOBv68Q==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: 220755c7ba78f6835e40d6e41548f81c
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Ratelimit-Limit: '200'
+            X-Ratelimit-Remaining: '199'
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: OK
+          status_code: 200
+    PUT:
+      https://stage-redhat.atlassian.net/rest/api/3/issue/RHELTEST-16971:
+      - metadata:
+          latency: 0.35718512535095215
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 1
+          _content: ''
+          _next: null
+          elapsed: 0.357048
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: d441ea04-77a5-4ca4-aeda-e9e1bccfaf6d
+            Atl-Traceid: d441ea0477a54ca4aedae9e1bccfaf6d
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Type: application/json;charset=UTF-8
+            Date: Wed, 19 Aug 2026 12:16:02 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Ratelimit: '"jira-burst-based";r=299;t=1'
+            Ratelimit-Policy: '"jira-burst-based";q=50;w=1'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=347,atl-edge;dur=247,atl-edge-internal;dur=15,atl-edge-upstream;dur=233,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="UMp8Hhx3hlO-LPjnN9IULW7gk3N_a5-X-2_HG66cyxJj3RdGkO25bw==",cdn-downstream-fbl;dur=351
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Aaccountid: 70121%3A8f548c74-cab4-473d-8b49-8bce9c7a5a84
+            X-Amz-Cf-Id: UMp8Hhx3hlO-LPjnN9IULW7gk3N_a5-X-2_HG66cyxJj3RdGkO25bw==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: 2a24f69c68fc11aaaa41fbcd064e7f68
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Ratelimit-Limit: '300'
+            X-Ratelimit-Remaining: '299'
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: No Content
+          status_code: 204

@@ -1,0 +1,64 @@
+_requre:
+  DataTypes: 1
+  key_strategy: StorageKeysInspectSimple
+  version_storage_file: 3
+requests.sessions:
+  send:
+    POST:
+      https://stage-redhat.atlassian.net/rest/api/3/search/jql:
+      - metadata:
+          latency: 0.389681339263916
+          module_call_list:
+          - unittest.case
+          - jira.export
+          - click.testing
+          - click.core
+          - click.decorators
+          - tmt.cli._root
+          - tmt.export
+          - tmt.export.jira
+          - requests.sessions
+          - requre.objects
+          - requre.cassette
+          - requests.sessions
+          - send
+        output:
+          __store_indicator: 2
+          _content:
+            isLast: true
+            issues: []
+          _next: null
+          elapsed: 0.389042
+          encoding: UTF-8
+          headers:
+            Atl-Request-Id: 06f0ef2c-20d7-4516-bb18-2239d085e6c2
+            Atl-Traceid: 06f0ef2c20d74516bb182239d085e6c2
+            Cache-Control: no-cache, no-store, no-transform
+            Connection: keep-alive
+            Content-Encoding: br
+            Content-Type: application/json;charset=UTF-8
+            Date: Tue, 18 Aug 2026 10:17:52 GMT
+            Nel: '{"failure_fraction": 0.01, "include_subdomains": true, "max_age":
+              600, "report_to": "endpoint-1"}'
+            Report-To: '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}],
+              "group": "endpoint-1", "include_subdomains": true, "max_age": 600}'
+            Server: AtlassianEdge
+            Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=359,atl-edge;dur=261,atl-edge-internal;dur=12,atl-edge-upstream;dur=250,atl-edge-pop;desc="aws-us-east-1",cdn-cache-miss,cdn-pop;desc="PRG50-P2",cdn-rid;desc="U7_CiCDatuysOA7s1c-IonmhYdGqKcSm_-oOBD05OcIrA35hQSqJaQ==",cdn-downstream-fbl;dur=365
+            Set-Cookie: atlassian.xsrf.token=089cda42e59d235101e5a71d44c81f6e21fa3133_lout;
+              Path=/; SameSite=None; Secure
+            Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+            Timing-Allow-Origin: '*'
+            Transfer-Encoding: chunked
+            Vary: Accept-Encoding
+            Via: 1.1 3dce922c66174508adcbded25a2fcbfc.cloudfront.net (CloudFront)
+            X-Amz-Cf-Id: U7_CiCDatuysOA7s1c-IonmhYdGqKcSm_-oOBD05OcIrA35hQSqJaQ==
+            X-Amz-Cf-Pop: PRG50-P2
+            X-Arequestid: dee23cb89eb330f4a6cca9713c97fb72
+            X-Cache: Miss from cloudfront
+            X-Content-Type-Options: nosniff
+            X-Seraph-Loginreason: AUTHENTICATED_FAILED
+            X-Xss-Protection: 1; mode=block
+          raw: !!binary ""
+          raw_decoded: !!binary ""
+          reason: OK
+          status_code: 200
