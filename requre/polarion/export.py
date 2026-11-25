@@ -15,6 +15,8 @@ import logging
 
 from typing import Any, IO, Mapping, Optional, Sequence, Union
 
+import tmt.__main__
+
 try:
     from tmt.cli._root import main as cli_main
 except ImportError:
@@ -66,6 +68,8 @@ class CliRunner(click.testing.CliRunner):
             color: bool = False,
             **extra: Any) -> click.testing.Result:
         reset_common()
+
+        tmt.__main__.import_cli_commands()
 
         return super().invoke(
             cli,
